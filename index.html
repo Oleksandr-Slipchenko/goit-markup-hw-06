@@ -455,33 +455,34 @@
 		<!-- modal window -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<form class="form js-speaker-form">
+				<!-- form -->
+				<form class="form js-speaker-form" autocomplete="off">
 					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
 					<div class="form-field">
-						<label for="name">Имя</label>
-						<input type="text" name="user-name" id="name" />
+						<input class="form-input" type="text" name="user-name" id="name" placeholder=" " />
+						<label class="form-label" for="name">Имя</label>
 					</div>
 					<div class="form-field">
-						<label for="tel">Телефон</label>
-						<input type="tel" name="tel" id="tel" />
+						<input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
+						<label class="form-label" for="tel">Телефон</label>
 					</div>
 					<div class="form-field">
-						<label for="mail">Почта</label>
-						<input type="email" name="mail" id="mail" />
+						<input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
+						<label class="form-label" for="mail">Почта</label>
 					</div>
-					<div class="form-field">
-						<label for="comment">Комментарий</label>
-						<textarea name="comment" id="comment" rows="10"></textarea>
+					<div class="form-field comment">
+						<textarea class="form-input" name="comment" id="comment" rows="10" placeholder=" "></textarea>
+						<label class="form-label comment-lable" for="comment">Комментарий</label>
 					</div>
 					<div class="form-field policy">
 						<input type="checkbox" name="policy" id="policy" />
-						<label for="policy">
+						<label class="label-policy" for="policy">
 							Соглашаюсь с рассылкой и принимаю
 							<a href="" class="agreement">Условия договора</a>
 						</label>
 					</div>
 					<div class="submite">
-						<button type="submit">Отправить</button>
+						<button class="button-submite" type="submit">Отправить</button>
 					</div>
 				</form>
 				<button data-modal-close>Закрыть</button>
