@@ -826,7 +826,7 @@ header {
 .form-input {
 	width: 448px;
 	height: 40px;
-	padding: 14px 19px;
+	padding: 14px 42px;
 	box-sizing: border-box;
 	border-radius: 4px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -847,9 +847,14 @@ header {
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
 	color: var(--text-color-hover);
-	transform: translate(-16px, -38px);
+	transform: translate(-26px, -38px);
 	font-size: 12px;
 	line-height: 1.16;
+}
+
+.form-field:focus-within .form-input {
+	border-color: var(--text-color-hover);
+	outline: none;
 }
 
 .form-field.comment {
@@ -874,7 +879,6 @@ header {
 }
 
 .form-field .agreement {
-	text-decoration-line: underline;
 	color: var(--text-color-hover);
 }
 .submite {
@@ -898,4 +902,15 @@ header {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border-style: none;
+}
+
+.icon-modal {
+	position: absolute;
+	top: 50%;
+	left: 19px;
+	transform: translateY(-50%);
+	transition: fill 250ms var(--timing-transition);
+}
+.form-input:focus ~ .icon-modal {
+	fill: var(--text-color-hover);
 }
