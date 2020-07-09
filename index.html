@@ -456,40 +456,41 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<!-- form -->
-				<form class="form js-speaker-form" autocomplete="off">
+				<form class="form" autocomplete="off">
 					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-					<div class="form-field">
-						<input class="form-input" type="text" name="user-name" id="name" placeholder=" " />
-						<label class="form-label" for="name">Имя</label>
-						<svg class="icon-modal" width="12" height="12">
+					<label class="form-field">
+						<input class="form-input" type="text" name="name" placeholder=" " />
+						<span class="form-label">Имя</span>
+						<svg class="icon-modal">
 							<use href="../images/symbol-defs.svg#icon-person-modal"></use>
 						</svg>
-					</div>
-					<div class="form-field">
-						<input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
-						<label class="form-label" for="tel">Телефон</label>
-						<svg class="icon-modal" width="13" height="13">
+					</label>
+					<label class="form-field">
+						<input class="form-input" type="tel" name="tel" placeholder=" " />
+						<span class="form-label">Телефон</span>
+						<svg class="icon-modal">
 							<use href="../images/symbol-defs.svg#icon-phone-modal"></use>
 						</svg>
-					</div>
-					<div class="form-field">
-						<input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
-						<label class="form-label" for="mail">Почта</label>
-						<svg class="icon-modal" width="15" height="12">
+					</label>
+					<label class="form-field">
+						<input class="form-input" type="email" name="mail" placeholder=" " />
+						<span class="form-label">Почта</span>
+						<svg class="icon-modal">
 							<use href="../images/symbol-defs.svg#icon-email-modal"></use>
 						</svg>
-					</div>
-					<div class="form-field comment">
-						<textarea class="form-input" name="comment" id="comment" rows="10" placeholder=" "></textarea>
-						<label class="form-label comment-lable" for="comment">Комментарий</label>
-					</div>
-					<div class="form-field policy">
-						<input type="checkbox" name="policy" id="policy" />
-						<label class="label-policy" for="policy">
+					</label>
+					<label class="form-field comment">
+						<textarea class="form-input" name="comment" rows="10" placeholder=" "></textarea>
+						<span class="form-label comment-lable">Комментарий</span>
+					</label>
+					<label class="form-field policy">
+						<input class="checkbox" type="checkbox" name="policy" />
+						<span class="check-icon"></span>
+						<span class="label-policy">
 							Соглашаюсь с рассылкой и принимаю
 							<a href="" class="agreement">Условия договора</a>
-						</label>
-					</div>
+						</span>
+					</label>
 					<div class="submite">
 						<button class="button-submite" type="submit">Отправить</button>
 					</div>
