@@ -861,6 +861,8 @@ header {
 	margin-bottom: 20px;
 }
 .form-field textarea {
+	padding: 12px 16px;
+
 	min-height: 120px;
 	resize: none;
 }
@@ -948,4 +950,35 @@ header {
 	height: 18px;
 	transform: translateY(-50%);
 	transition: fill 250ms var(--timing-transition);
+}
+
+/* button-close */
+
+.button-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+
+	background-color: var(--accent-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.icon-close {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 11px;
+	height: 11px;
+
+	fill: var(--primary-text-color);
+	transition: fill 250ms var(--timing-transition);
+}
+.button-close:hover .icon-close,
+.button-close:focus .icon-close {
+	fill: var(--text-color-hover);
 }
