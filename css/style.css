@@ -565,8 +565,8 @@ header {
 
 /* subscribe */
 
-.subscribe {
-	width: calc((100% - 60px) / 2);
+.form-subscribe {
+	width: calc((100% - 30px) / 2);
 }
 .subscribe-title {
 	margin-bottom: 20px;
@@ -578,21 +578,31 @@ header {
 	text-transform: uppercase;
 	color: var(--accent-color);
 }
-.subscribe .list {
+.form-subscribe .list {
 	display: flex;
 }
+
 .subscribe-input {
-	padding: 15px 295px 15px 16px;
+	padding: 15px 16px;
 	margin-right: 12px;
 
-	width: max-content;
+	min-width: 358px;
 
 	font-size: 16px;
 	line-height: 1.25;
+	background-color: inherit;
 	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	color: rgba(255, 255, 255, 0.6);
+	transition: border-color 250ms var(--timing-transition);
 }
+.rerere:focus-within .subscribe-input {
+	border-color: var(--text-color-hover);
+	outline: none;
+}
+
 .subscribe-button {
 	padding: 10px 28px 10px 29px;
 
@@ -611,27 +621,6 @@ header {
 .button-text {
 	margin-right: 10px;
 }
-
-/* .subscribe-button::after {
-	content: "";
-	width: 24px;
-	height: 24px;
-	margin-left: 10px;
-
-	color: var(--accent-color);
-	background-image: url(../images/symbol-defs.svg#icon-paper-plane-footer);
-} */
-
-/* .footer-copyrights {
-	padding-top: 18px;
-	padding-bottom: 21px;
-
-	text-align: center;
-	color: rgba(255, 255, 255, 0.4);
-	font-size: 12px;
-	line-height: 2;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-} */
 
 /* Portfolio */
 
